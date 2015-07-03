@@ -1,0 +1,10 @@
+server.route({
+  path: '/assets1/{path*}',
+  method: 'GET',
+  handler: {
+    directory: {
+      path: './Desktop',
+      listing: false
+    }
+  }
+  })
